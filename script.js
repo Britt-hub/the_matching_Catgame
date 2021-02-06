@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Below are the cards
+  // Below are the different cards
   const cardArray = [
     {
       name: "myLogo",
