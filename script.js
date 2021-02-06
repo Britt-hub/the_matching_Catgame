@@ -126,60 +126,61 @@ document.addEventListener("DOMContentLoaded", () => {
       grid.appendChild(card);
     }
   }
+  //things to do and fix//
+  // this will check for matches
+  // matching does not work accuratly
+  // need to work on adding score
 
-  //this will check for matches
-  
-  
-//   function checkForMatch() {
-//     var cards = document.querySelectorAll("img");
-//     const optionOneId = cardsChosenId[0];
-//     const optionTwoId = cardsChosenId[1];
+  function checkForMatch() {
+    var cards = document.querySelectorAll("img");
+    const optionOneId = cardsChosenId[0];
+    const optionTwoId = cardsChosenId[1];
 
-//     if (cardsChosenId[0] === cardsChosenId[1]) {
-//       alert("You found a match!!");
-//       cards[optionOneId].setAttribute(
-//         "src",
-//         "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
-//       );
-//       cards[optionTwoId].setAttribute(
-//         "src",
-//         "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
-//       );
-//       cardsWon.push(cardsChosen);
+    if (cardsChosenId[0] === cardsChosenId[1]) {
+      alert("You found a match!!");
+      cards[optionOneId].setAttribute(
+        "src",
+        "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
+      );
+      cards[optionTwoId].setAttribute(
+        "src",
+        "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
+      );
+      cardsWon.push(cardsChosen);
 
-//       // may just need to add a blank card aka blank img perhaps
-//     } else if (optionOneId == optionTwoId) {
-//       cards[optionOneId].setAttribute(
-//         "src",
-//         "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
-//       );
-//       cards[optionOneId].setAttribute(
-//         "src",
-//         "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
-//       );
-//       alert("You have clicked the same image!");
-//     } else {
-//       // find an "x" or blank card for below
-//       cards[optionOneId].setAttribute(
-//         "src",
-//         "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.36.32%20AM.png?v=1611751036497"
-//       );
-//       // find an "x" or blank card for below
+      // may just need to add a blank card aka blank img perhaps
+    } else if (optionOneId == optionTwoId) {
+      cards[optionOneId].setAttribute(
+        "src",
+        "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
+      );
+      cards[optionOneId].setAttribute(
+        "src",
+        "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.37.51%20AM.png?v=1611751097721"
+      );
+      alert("You have clicked the same image!");
+    } else {
+      // find an "x" or blank card for below
+      cards[optionOneId].setAttribute(
+        "src",
+        "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.36.32%20AM.png?v=1611751036497"
+      );
+      // find an "x" or blank card for below
 
-//       cards[optionTwoId].setAttribute(
-//         "src",
-//         "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.36.32%20AM.png?v=1611751036497"
-//       );
-//       alert("Sorry, try again");
-//     }
+      cards[optionTwoId].setAttribute(
+        "src",
+        "https://cdn.glitch.com/a3a75522-6dc9-4e61-b73d-e3f7cc2ff23c%2FScreen%20Shot%202021-01-27%20at%207.36.32%20AM.png?v=1611751036497"
+      );
+      alert("Sorry, try again");
+    }
 
-//     cardsChosen = [];
-//     cardsChosenId = [];
-//     resultDisplay.textContent = cardsWon.length;
-//     if (cardsWon.length === cardArray.length / 2) {
-//       resultDisplay.textContent = "Congradulations!!🥳 You won the game!";
-//     }
-//   }
+    cardsChosen = [];
+    cardsChosenId = [];
+    resultDisplay.textContent = cardsWon.length;
+    if (cardsWon.length === cardArray.length / 2) {
+      resultDisplay.textContent = "Congradulations!!🥳 You won the game!";
+    }
+  }
 
   //write code to flip the card over
 
