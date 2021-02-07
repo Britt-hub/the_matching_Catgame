@@ -1,0 +1,19 @@
+/* making a 3x4 grid */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 400px;
+  border-style: ridge;
+  border-color: #l757b96;
+  padding: 10px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  background-color: #d3d3d3;
+}
